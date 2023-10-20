@@ -1,13 +1,20 @@
-# "Writing an Interpreter in Go"
+# Notes on "Writing an Interpreter in Go"
 
 ## Introduction
 
-#### parse the source code, build an Abstract Syntax Tree (AST), and then evaluate the AST
+- Parse source code ➜ Build Abstract Syntax Tree (AST) ➜ Evaluate AST
+- Key Components: lexer, parser, AST, internal object system, evaluator
+- Language: Monkey
+  - C-like syntax
+  - Features:
+    - Variables
+    - Integers/Booleans
+    - Arithmetic ops
+    - Built-in functions
+    - First-class & higher-order functions
+    - Closures
+    - Data types: String/Array/Hash
 
-#### lexer, parser, AST, internal object system, evaluator
-
-#### monkey - C-like, variable, integers/booleans, arithmetic, built-in functions, first-class and higher-order functions, closures, string/array/hash data structures, etc
-
-## Chapter 1 - Lexing
+## Chapter 1: Lexing
 
 ### Lexical Analysis
