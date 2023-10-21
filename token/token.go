@@ -1,5 +1,6 @@
 package token
 
+// define TokenType and struct
 type TokenType string
 
 type Token struct {
@@ -7,6 +8,7 @@ type Token struct {
 	Literal string
 }
 
+// define TokenType constants
 const (
 	ILLEGAL = "ILLEGAL"
 	EOF     = "EOF"
@@ -31,3 +33,17 @@ const (
 	FUNCTION = "FUNCTION"
 	LET = "LET" 
 )
+
+// define keywords map
+var keywords = map[string]TokenType{
+	"fn": FUNCTION,
+	"let": LET,
+}
+
+// check if identifier is a keyword
+func LookupIdent(ident string) TokenType {
+	if tok, ok := keywords[ident]; ok {
+		return tok
+	}
+	return IDENT
+}
