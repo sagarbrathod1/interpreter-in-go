@@ -18,3 +18,7 @@
 ## Chapter 1: Lexing
 
 ### Lexical Analysis
+
+- Lexer: reads source code, produces tokens
+- Token: a pair of token type and literal value
+- REPL: read-eval-print loop -
