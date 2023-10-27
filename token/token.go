@@ -24,7 +24,7 @@ const (
 	BANG     = "!"
 	ASTERISK = "*"
 	SLASH    = "/"
-	
+
 	LT = "<"
 	GT = ">"
 
@@ -39,12 +39,22 @@ const (
 	// Keywords
 	FUNCTION = "FUNCTION"
 	LET = "LET" 
+	TRUE = "TRUE"
+	FALSE = "FALSE"
+	IF = "IF"
+	ELSE = "ELSE"
+	RETURN = "RETURN"
 )
 
 // define keywords map
 var keywords = map[string]TokenType{
 	"fn": FUNCTION,
 	"let": LET,
+	"true": TRUE,
+    "false":  FALSE,
+    "if":     IF,
+    "else":   ELSE,
+    "return": RETURN,
 }
 
 // check if identifier is a keyword
