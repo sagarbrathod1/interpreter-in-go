@@ -21,4 +21,24 @@
 
 - Lexer: reads source code, produces tokens
 - Token: a pair of token type and literal value
-- REPL: read-eval-print loop -
+- REPL: read-eval-print loop
+
+## Chapter 2: Parsing
+
+### Parsers
+
+- Parser: reads tokens, produces AST
+- "Code is data, data is code" - Lisp
+- Syntactic analysis
+
+### Parser Generators
+
+- CFG: context-free grammar
+- BNF: Backus-Naur Form
+
+### Parser for Monkey Language
+
+- Recursive descent parser
+  -- top down operator precedence parser (Pratt parser)
+- construct root node of AST and then descend
+- expressions return values, statements don't
